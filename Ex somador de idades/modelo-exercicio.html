@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex_DiaSemana</title>
+    <link rel="stylesheet" href="modelo-exercicio.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Somador de idades</h1>
+    </header>
+
+    
+    <section>
+        <div>
+            <p>
+                Data de nascimento: <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+
+            <p>
+                Sexo: 
+                <input type="radio" name="radsexo" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsexo" id="fem">
+                <label for="fem">Feminino</label>
+
+                <input type="button" value="Verificar" onclick="verificar()" id="ver">
+            </p>
+        </div>
+
+        <div id="res">
+            Preencha os dados acima para ver o resultado.
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;criado por Arafam Abm</p>
+    </footer>
+
+    <script src="modelo-exercicio.js"></script>
+</body>
+</html>

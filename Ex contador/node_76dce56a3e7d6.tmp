@@ -1,0 +1,9 @@
+
+var c = 0
+var i = 1
+var f = 5
+var p = 1
+
+for(c = i; c <= f; p++){
+    console.log(`${c}..`)
+}

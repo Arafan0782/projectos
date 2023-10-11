@@ -1,0 +1,42 @@
+
+body{
+    background-color: rgba(9, 5, 5, 0.707);
+    color: white;
+    font-size: 18pt;
+
+
+}
+
+header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section{
+    background-color: rgba(67, 208, 230, 0.679);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(38, 38, 38, 0.629);
+}
+
+input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input#ver{
+    margin-left: 20px;
+}
+
+div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+}

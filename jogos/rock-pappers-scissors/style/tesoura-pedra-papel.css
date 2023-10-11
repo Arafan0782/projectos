@@ -1,0 +1,42 @@
+
+body{
+    background-color: rgb( 25, 25, 25);
+    color: white;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.botoes{
+    text-align: center;
+    margin-top: 50 px;
+    margin-bottom: 50px;
+    
+}
+
+.botoes > button{
+    margin-right: 20px;
+    border: 3px solid white ;
+    background-color: transparent;
+    color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    cursor: pointer;
+
+
+.imagem{
+    height: 50px;
+}
+
+
+
+.css-resultado{
+    font-size: 25px;
+    font-weight: bold;
+}
+

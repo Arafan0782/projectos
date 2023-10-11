@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Tesoura, pedra, papel</title>
+    <link rel="stylesheet" href="Css/tesoura-pedra-papel.css">
+</head>
+<body>
+    <header>
+        <h1> Pedra - Tesoura - Papel</h1>
+    </header>
+
+    <section>
+        <div class="botoes-jogos">
+
+            <!-- Pedra -->
+            <button onclick=" jogar('Pedra'); ">
+                <img class="imagens" src="imagens/Pedra-emoji.png">
+            </button>
+
+
+            <!-- Tesoura -->
+            <button onclick=" jogar('Tesoura'); " >
+                <img class="imagens"  src="imagens/Tesoura-emoji.png">
+            </button>
+
+
+            <!-- Papel -->
+            <button onclick=" jogar('Papel'); ">
+                <img class="imagens"  src="imagens/Papel-emoji.png">
+            </button>
+
+        </div>
+
+        <div class="apagar"  onclick="
+            apagarPontuacoes();
+            localStorage.removeItem('pontuacoes');
+        ">
+
+            <button>Apagar pontuacoes</button>
+
+        </div>
+
+        <div class="resultado">
+
+            <p class="css-resultado-jogo js-resultado-jogo" >
+                Aguardando resultado...
+            </p>
+
+            <p class="css-resultado-movimentos js-resultado-movimentos">
+
+                <!-- Aboh
+                <img class="imagens"  src="imagens/Tesoura-emoji.png">
+                <img class="imagens"  src="imagens/Papel-emoji.png">
+                Computador -->
+
+            </p>
+
+            <p class="css-pontuacoes js-pontuacoes">
+                Aqui vai aparecer as pontuacoes...
+            </p>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Foi feito pelo &copy;Arafam</p>
+    </footer>
+
+
+
+    <script src="javaScript/tesoura-pedra-papel.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: rgb(15, 12, 12);
+            color: white;
+            font-size: 15pt;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            margin-top: 50px;
+            background-color: gray;
+            width: auto;
+            max-width: 500px;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Sistemas de Migracoes</h1>
+
+    <p>Na es programa i ta da pa sibih si contra bu sta na precisa de visto pa entra <strong>Guine-Bissau</strong> ou nao!</p>
+
+    Digita nnome di bu pais: <input type="text" name="txt" id="txt">
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="res">
+        Aguardando resultado...
+    </div>
+
+    <script>
+
+        function verificar() {
+            
+            var texto = window.document.querySelector('input#txt')
+            var res = document.querySelector('div#res')
+
+            var nacionalidade = String(texto.value)
+
+            res.innerHTML = `Bu nacionalidade i di: <strong> ${nacionalidade}</strong>.`
+
+
+            if (nacionalidade === 'Guine-Bisssau' || nacionalidade === 'Senegal' || nacionalidade === 'Guine Konackri' || nacionalidade === 'Gambia') {
+
+               res.innerHTML += `<br>Di acordo ku pais selecionado, bu sta bem-vindo a Guine-Bissau!`
+            }else{
+                res.innerHTML += `<br> Desculpa. Infelizmente bu ca faci parte di paises ku permetido entra Guine-Bissau sim visto. <br> Di acordo ku bu pais, Bu sta na precisa di visto.`
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

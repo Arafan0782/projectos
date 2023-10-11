@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesoura Pedra Papel</title>
+    <link rel="stylesheet" href="style/tesoura-pedra-papel.css">
+</head>
+<body>
+    <h1>Tesoura Pedra Papel</h1>
+
+    <div class="botoes">
+
+        <button onclick="jogar('Tesoura');">
+        
+            <img class="imagem" src="imagens/scissors-emoji.png" alt="imagem tesoura">
+        
+        </button>
+
+        <button onclick="jogar('Pedra');">
+
+          <img class="imagem" src="imagens/rock-emoji.png" alt="imagem de pedra">
+
+        </button>
+
+        <button onclick="jogar('Papel');">
+        
+           <img class="imagem" src="imagens/paper-emoji.png" alt="imagem de papel">
+
+        </button>
+
+    </div>
+
+
+        <p class="js-resultado css-resulad">Bu ganha.</p>
+
+        <!-- <p class="resultado-ecra"></p> -->
+
+        <p class="resultado-js">
+            Aboh.
+            <img class="imagem" src="imagens/paper-emoji.png">
+            <img class="imagem" src="imagens/scissors-emoji.png" >
+            computador
+        </p>
+
+        <p class="computador"> </p>
+        
+
+    
+
+
+    
+    <button class="apagar" onclick="
+        pontuacoes.ganhos = 0;
+        pontuacoes.perdas = 0;
+        pontuacoes.empates = 0;
+        localStorage.removeItem('pontuacoes')
+    ">Apagar Pontuacoes
+
+    </button>
+
+
+    <script src="js/tesoura-pedra-papel.js"></script>
+</body>
+</html>
